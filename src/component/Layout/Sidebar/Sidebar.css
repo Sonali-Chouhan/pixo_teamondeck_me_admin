@@ -1,0 +1,155 @@
+.logoName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 7.5rem;
+  padding: 1.75rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--light-divider);
+  width: 23rem;
+  height: 100vh;
+  background-color: #fff;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.profileDiv {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.sidebarFotter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  width: auto;
+}
+
+.sidebarList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.eachSidebarList {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 1rem 2rem 1rem 1rem;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.eachSidebarList svg{
+  font-size: 25px;
+}
+
+.projectDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebarMiddlePart {
+  border-top: 1px solid var(--grey-border);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 19rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  height: 100%;
+}
+
+.accountModel {
+  border: 1px solid var(--light-divider);
+  position: absolute;
+  top: -11rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.accountModel::after {
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  border-right: 1px solid var(--light-divider);
+  border-bottom: 1px solid var(--light-divider);
+  position: absolute;
+  transform: rotate(45deg);
+  right: 1.5rem;
+  background-color: white;
+  bottom: -0.6rem;
+}
+
+.signalProject {
+  padding: 0 0 0 20px;
+
+  div p {
+    color: #1C1243;
+    font-weight: 400;
+  }
+}
+
+.accountModelList {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.active:hover {
+  opacity: 0.9;
+}
+
+.inactive:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 899px) {
+  .sidebar {
+    position: absolute;
+    top: 70px;
+    width: 20rem;
+  }
+
+  .showSidebar {
+    display: block;
+  }
+
+  .hideSidebar,
+  .logoName,
+  .divider {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    top: 56px;
+  }
+
+  .divider {
+    display: none;
+  }
+}

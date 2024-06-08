@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #643fdb;
+  --grey-border: #d9d9d9;
+  --page-bg: #f5f6fa;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  /* color:"#1C1243" */
+}
+
+/* **********Color********* */
+
+.light_grey_color {
+  color: #a29eb6;
+}
+
+.dark_blue_color {
+  color: #1c1243;
+}
+.peach_color {
+  color: #ff7070;
+}
+
+.green_color {
+  color: #639412;
+}
+
+.pink_color {
+  color: #ff9de9;
+}
+
+.skyBlue_color {
+  color: #70baff;
+}
+
+.checkoutButton_color {
+  color: #f45757;
+}
+
+.total_days_bg {
+  background: #89c6ff;
+  color: #356795;
+}
+
+.present_days_bg {
+  background: rgba(22, 192, 152, 0.2);
+  color: #16c098;
+}
+
+.absent_days_bg {
+  background: #ffb4a8;
+  color: #853123;
+}
+
+.half_days_bg {
+  background: #fce3a2;
+  color: #957626;
+}
+
+.off_days_bg {
+  background: #a7faff;
+  color: #269299;
+}
+
+.holidays_bg {
+  background: #ff9dcc;
+  color: #923260;
+}
+
+.monthly_pattern_color {
+  background: #16c098;
+}
+
+.divider {
+  border: 0px solid var(--grey-border);
+  width: 100%;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  font-size: 1.5rem;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.fontWeight {
+  font-weight: 600;
+}
+
+.primaryColor {
+  color: #643fdb;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}

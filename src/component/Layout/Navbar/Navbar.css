@@ -1,0 +1,86 @@
+.navPage{
+  width: 100%;
+  background-color: #f5f6fa;
+}
+
+.navApp {
+  right: 0;
+  height: 7rem;
+  padding: 0 3rem 0 0;
+  background-color: white !important;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15) !important;
+  position: sticky !important;
+}
+
+.inputFields input {
+  outline: none;
+  border: none;
+}
+
+.searchBar {
+  border-radius: 5px;
+  border: 1px solid #eff1f5;
+  background-color: var(--page-bg);
+  height: 3.5rem;
+  width: 22rem;
+  padding-left: 1rem;
+}
+
+.searchInput {
+  width: 15rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+
+.navProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.userName {
+  color: var(--primary-color);
+}
+
+.navbaricons{
+  font-size: 25px !important;
+}
+@media screen and (min-width: 425px) {
+  .searchBar {
+    width: 33rem;
+  }
+
+  .searchInput {
+    width: 27rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .navApp {
+    border-left: 1px solid var(--grey-border);
+  }
+}
+
+/* profile modal styling */
+
+.profileModal {
+  position: absolute;
+  width: 18rem;
+  top: 6rem;
+  right: 2px;
+  height: 10rem;
+  background-color: white;
+
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: 2px solid #eceef7;
+  z-index: 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
